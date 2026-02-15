@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peran Teknologi dalam Akses Pendidikan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <style>
+    .hover-scale { transition: transform 0.3s ease; }
+    .hover-scale:hover { transform: scale(1.03); }
+    .nav-item.active {
+      border-bottom: 3px solid #3b82f6;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3976/3976626.png" class="h-10 mr-3" alt="Logo Pendidikan" />
+        <h1 class="text-2xl font-bold text-blue-600 dark:text-white">Pendidikan Berkualitas</h1>
+      </div>
+      <nav class="flex items-center">
+        <ul class="flex space-x-8">
+          <li><a href="beranda.html" class="nav-item">Beranda</a></li>
+          <li><a href="tentang-kami.html" class="nav-item">Tentang Kami</a></li>
+          <li><a href="artikel.html" class="nav-item active">Artikel</a></li>
+          <li><a href="kontak.html" class="nav-item">Kontak</a></li>
+          <li><a href="komentar.php" class="nav-item">Komentar</a></li>
+        </ul>
+        <button id="dark-toggle" class="ml-4 px-3 py-1 border rounded text-sm hover:bg-gray-200 dark:hover:bg-gray-700">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Isi Artikel -->
+  <section class="py-16 px-4 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-indigo-950 dark:via-slate-900 dark:to-sky-900">
+    <div class="max-w-4xl mx-auto backdrop-blur-md bg-white/70 dark:bg-white/10 shadow-2xl border border-blue-200 dark:border-white/10 rounded-3xl px-8 py-10">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Pembelajaran Kolaboratif untuk Masa Depan</h2>
+      <img src="kolaboratif.png" alt="Ilustrasi Teknologi Pendidikan" class="rounded-lg shadow-lg mb-6 w-full max-h-[300px] object-cover">
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Di era digital dan globalisasi yang semakin kompleks, sistem pendidikan perlu bertransformasi agar mampu mencetak generasi pemikir yang kritis, kreatif, dan kolaboratif. 
+        Salah satu pendekatan yang kini semakin relevan dan dibutuhkan adalah pembelajaran kolaboratif transformatif—sebuah metode yang tidak hanya mendorong kerja sama antar peserta didik, tetapi juga mentransformasi cara berpikir dan bertindak dalam proses belajar.
+      </p>
+      <p class="font-semibold text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Apa Itu Pembelajaran Kolaboratif Transformatif?
+      </p>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Pembelajaran kolaboratif transformatif adalah pendekatan belajar di mana siswa bekerja dalam kelompok untuk memecahkan masalah, mengeksplorasi ide, dan membangun pengetahuan bersama. 
+        Yang membedakannya dari pembelajaran kolaboratif biasa adalah adanya proses refleksi mendalam dan perubahan perspektif yang terjadi selama proses pembelajaran.
+        Pendekatan ini tidak hanya fokus pada hasil akademik, tetapi juga pada proses pembelajaran itu sendiri, seperti kemampuan berkomunikasi, bernegosiasi, empati, serta keberanian untuk mempertanyakan asumsi dan menciptakan solusi baru.
+      </p>
+      <p class="font-semibold text-gray-800 dark:text-gray-300 leading-relaxed mb-4">
+        Manfaat Pembelajaran Kolaboratif Transformatif:
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+	  1.	Mendorong Pemikiran Kritis dan Reflektif
+    Siswa tidak hanya menerima informasi, tetapi juga diajak untuk menganalisis, mengevaluasi, dan menyumbangkan ide mereka dalam diskusi kelompok.
+	<p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    2.	Menumbuhkan Kreativitas dan Inovasi
+    Ketika bekerja dalam tim, siswa belajar untuk menggabungkan ide dan menciptakan pendekatan baru dalam menyelesaikan masalah.
+	<p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    3.	Mengembangkan Keterampilan Sosial dan Emosional
+    Kolaborasi mengajarkan siswa untuk saling menghargai, mendengarkan pendapat orang lain, serta menyelesaikan konflik secara konstruktif.
+	<p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    4.	Meningkatkan Kemandirian dan Tanggung Jawab
+    Dalam tim, setiap anggota memiliki peran yang membuat mereka bertanggung jawab atas keberhasilan kelompok secara keseluruhan.
+      </p>
+    <p class="text-gray-800 dark:text-gray-300 leading-relaxed mb-4">
+    Meskipun menawarkan banyak manfaat, pembelajaran kolaboratif transformatif juga menghadapi tantangan, seperti kesenjangan partisipasi siswa, manajemen waktu, 
+    serta kurangnya keterampilan guru dalam memfasilitasi diskusi yang bermakna.</p>
+    <p class="font-semibold text-gray-800 dark:text-gray-300 leading-relaxed mb-4">
+    Beberapa strategi untuk mengatasi tantangan tersebut antara lain:
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    •	Pelatihan guru dalam fasilitasi pembelajaran berbasis proyek dan diskusi reflektif.
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    •	Penggunaan teknologi kolaboratif seperti papan tulis digital, platform diskusi daring, dan manajemen tugas kelompok.
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    •	Penilaian yang tidak hanya berbasis hasil akhir, tetapi juga pada proses, kontribusi, dan refleksi siswa.
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4"></p>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mt-6">Oleh: Tim Redaksi Pendidikan Berkualitas · 24 Juni 2025
+    <p class="text-sm text-gray-500 dark:text-gray-400 mt-6">Referensi: Guru Inovatif. (2024). Peran Penting Teknologi dalam Meningkatkan Akses Pendidikan di Indonesia Tahun 2024. 
+    Diakses dari https://guruinovatif.id/artikel/peran-penting-teknologi-dalam-meningkatkan-akses-pendidikan-di-indonesia-tahun-2024 </p>
+  </div>
+  </section>
+
+  <!-- Script dark mode -->
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    const html = document.documentElement;
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peran Teknologi dalam Akses Pendidikan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <style>
+    .hover-scale { transition: transform 0.3s ease; }
+    .hover-scale:hover { transform: scale(1.03); }
+    .nav-item.active {
+      border-bottom: 3px solid #3b82f6;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3976/3976626.png" class="h-10 mr-3" alt="Logo Pendidikan" />
+        <h1 class="text-2xl font-bold text-blue-600 dark:text-white">Pendidikan Berkualitas</h1>
+      </div>
+      <nav class="flex items-center">
+        <ul class="flex space-x-8">
+          <li><a href="beranda.html" class="nav-item">Beranda</a></li>
+          <li><a href="tentang-kami.html" class="nav-item">Tentang Kami</a></li>
+          <li><a href="artikel.html" class="nav-item active">Artikel</a></li>
+          <li><a href="kontak.html" class="nav-item">Kontak</a></li>
+          <li><a href="komentar.php" class="nav-item">Komentar</a></li>
+        </ul>
+        <button id="dark-toggle" class="ml-4 px-3 py-1 border rounded text-sm hover:bg-gray-200 dark:hover:bg-gray-700">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Isi Artikel -->
+  <section class="py-16 px-4 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-indigo-950 dark:via-slate-900 dark:to-sky-900">
+    <div class="max-w-4xl mx-auto backdrop-blur-md bg-white/70 dark:bg-white/10 shadow-2xl border border-blue-200 dark:border-white/10 rounded-3xl px-8 py-10">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Pentingnya Pelatihan Berkelanjutan bagi Pendidik</h2>
+      <img src="pendidik_3.png" alt="Ilustrasi Teknologi Pendidikan" class="rounded-lg shadow-lg mb-6 w-full max-h-[300px] object-cover">
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Pendidikan berkelanjutan untuk guru merupakan langkah strategis dalam memastikan kualitas pendidikan tetap terjaga. 
+        Di tengah tuntutan global saat ini, peran guru tidak hanya mengajar materi di kelas, tetapi juga perlu terus memperbarui keterampilan yang berkelanjutan.</p>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Melalui Pengembangan Keprofesian Berkelanjutan (PKB), pemerintah menyediakan kerangka yang jelas untuk meningkatkan kompetensi guru. Hal ini selaras dengan Undang‑Undang No. 14 Tahun 2005 tentang Guru dan Dosen, 
+        yang mengharuskan setiap guru mengembangkan kemampuan akademik serta profesionalnya.
+        Dalam praktiknya, program pengembangan karier guru ini diatur lebih lanjut oleh Peraturan Menteri Pendidikan Nasional (Permendiknas) No. 16 Tahun 2007, yang menetapkan standar kompetensi dan kualifikasi yang harus dicapai.
+      </p>
+
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Dengan hanya membutuhkan koneksi internet, siswa di daerah terpencil pun dapat belajar dari materi berkualitas yang sama dengan siswa di kota besar.
+        Selain itu, penggunaan teknologi juga memungkinkan personalisasi pembelajaran, di mana setiap siswa bisa belajar sesuai dengan gaya dan kecepatan masing-masing.
+      </p>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Standar tersebut mencakup empat aspek utama, yaitu kompetensi pedagogik yang berfokus pada kemampuan mengelola pembelajaran, kompetensi kepribadian yang mencerminkan integritas dan moralitas guru, kompetensi sosial yang melibatkan interaksi guru, 
+        serta kompetensi profesional yang terkait dengan penguasaan materi dan metode pembelajaran.
+        Keempat aspek tersebut memperjelas pentingnya pendidikan lanjutan guru agar mereka mampu terus beradaptasi dan memenuhi kebutuhan pendidikan yang dinamis. 
+        Dengan demikian, guru dapat terus meningkatkan kualitas pengajaran dan mendukung tercapainya tujuan pendidikan nasional.
+      </p>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-6">Oleh: Tim Redaksi Pendidikan Berkualitas · 24 Juni 2025
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-6">Referensi: Guru Berdaya. (2023). Pendidikan Berkelanjutan untuk Guru. Diakses dari https://guruberdaya.org/pendidikan-berkelanjutan-untuk-guru/
+      </p>
+    </div>
+  </section>
+
+  <!-- Script dark mode -->
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    const html = document.documentElement;
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

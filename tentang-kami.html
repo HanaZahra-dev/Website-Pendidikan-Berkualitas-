@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Kami - Pendidikan Berkualitas</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+
+  <!-- Aktifkan dark mode dari localStorage -->
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+
+  <style>
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+    .nav-item.active {
+      border-bottom: 3px solid #3b82f6;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3976/3976626.png" alt="Logo Pendidikan" class="h-10 mr-3">
+        <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Pendidikan Berkualitas</h1>
+      </div>
+      <nav class="flex items-center space-x-4">
+        <ul class="flex space-x-6">
+          <li><a href="beranda.html" class="nav-item py-2 px-1 hover:text-blue-600 transition">Beranda</a></li>
+          <li><a href="artikel.html" class="nav-item py-2 px-1 hover:text-blue-600 transition">Artikel</a></li>
+          <li><a href="tentang-kami.html" class="nav-item active py-2 px-1 hover:text-blue-600 transition">Tentang Kami</a></li>
+          <li><a href="kontak.html" class="nav-item py-2 px-1 hover:text-blue-600 transition">Kontak</a></li>
+          <li><a href="komentar.php" class="nav-item py-2 px-1 hover:text-blue-600 transition">Komentar</a></li>
+        </ul>
+        <button id="dark-toggle" class="ml-4 px-3 py-1 border rounded text-sm text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Tentang Kami -->
+  <section class="py-16 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-indigo-950 dark:via-gray-900 dark:to-sky-900 transition-all duration-500">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center gap-12 backdrop-blur-md bg-white/60 dark:bg-white/10 rounded-3xl shadow-2xl border border-blue-200 dark:border-white/10 p-10">  
+        <div class="lg:w-1/2">
+          <img src="pb_logo.png" alt="Tim Kami" class="w-full rounded-lg shadow-lg hover-scale">
+        </div>
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold mb-6">Tentang Kami</h2>
+          <p class="mb-4"> Kami adalah mahasiswa dari Universitas Bina Sarana Informatika prodi Sistem Informasi, kami sedang menyelesaikan project pada mata kuliah Web Programming yang sedang membuat sebuah website artikel bertema <strong>"Pendidikan Berkualitas"</strong>. Website ini merupakan bagian dari tugas proyek yang bertujuan untuk menyampaikan informasi dan edukasi mengenai pentingnya pendidikan yang inklusif, merata, dan berkualitas bagi semua kalangan.</p>
+          <p>Website ini berisi berbagai artikel yang membahas isu-isu pendidikan, solusi yang dapat diterapkan, serta inspirasi dari berbagai daerah. Melalui platform ini, kami ingin berkontribusi dalam menyebarkan kesadaran dan semangat belajar sepanjang hayat.</p>
+          <p>Proyek ini juga menjadi sarana kami untuk menerapkan pengetahuan HTML, CSS, PHP, dan JavaScript dalam pembuatan website secara praktis.</p>
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="bg-blue-50 dark:bg-blue-900 p-4 rounded-lg">
+              <h4 class="font-bold text-blue-600 dark:text-blue-300 mb-2">Visi</h4>
+              <p>Mewujudkan pendidikan berkualitas yang dapat diakses oleh semua.</p>
+            </div>
+            <div class="bg-green-50 dark:bg-green-900 p-4 rounded-lg">
+              <h4 class="font-bold text-green-600 dark:text-green-300 mb-2">Misi</h4>
+              <p>Mengembangkan solusi inovatif untuk tantangan pendidikan.</p>
+            </div>
+          </div>
+
+          <a href="relawan.html" class="inline-block bg-blue-600 dark:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition hover-scale">Jadi Bagian Dari Misi Pendidikan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil Penggerak Website -->
+  <section class="py-16 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-indigo-950 dark:via-gray-900 dark:to-sky-900 transition-all duration-500">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="backdrop-blur-md bg-white/60 dark:bg-white/10 rounded-3xl shadow-2xl border border-blue-200 dark:border-white/10 p-10">
+        <h3 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-white">Kontributor Pendidikan Berkualitas</h3>
+  
+      <!-- Contoh Profil -->
+      <div class="flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8 hover-scale">
+        <img src="images.png" alt="Foto mela" class="w-32 h-32 rounded-full shadow-md object-cover object-center mb-4 md:mb-0 md:mr-6">
+        <div>
+          <h4 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Hana Rahmaya Zahra</h4>
+          <p class="font-medium">Pengelola Website</p>
+          <p class="italic mt-2 text-gray-500 dark:text-gray-300">“Menjaga performa dan keamanan situs agar selalu nyaman diakses siapa saja.”</p>
+        </div>
+      </div> 
+
+      <div class="flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8 hover-scale">
+        <img src="images.png" alt="Foto Hana" class="w-32 h-32 rounded-full shadow-md object-cover object-center mb-4 md:mb-0 md:mr-6">
+        <div>
+          <h4 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Melati Shahada Choeswiningtias</h4>
+          <p class="font-medium">Penulis Konten</p>
+          <p class="italic mt-2 text-gray-500 dark:text-gray-300">“Mengolah ide jadi tulisan edukatif yang mudah dipahami dan berdampak.”</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8 hover-scale">
+        <img src="images.png" alt="Foto Endah" class="w-32 h-32 rounded-full shadow-md object-cover object-center mb-4 md:mb-0 md:mr-6">
+        <div>
+          <h4 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Endah Ramadani</h4>
+          <p class="font-medium">Komunikasi Publik</p>
+          <p class="italic mt-2 text-gray-500 dark:text-gray-300">“Membangun narasi dan menyuarakan semangat pendidikan ke publik lewat berbagai kanal.”</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8 hover-scale">
+        <img src="images.png" alt="Foto step" class="w-32 h-32 rounded-full shadow-md object-cover object-center mb-4 md:mb-0 md:mr-6">
+        <div>
+          <h4 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Stephani Dessire Binoey</h4>
+          <p class="font-medium">Data dan Riset</p>
+          <p class="italic mt-2 text-gray-500 dark:text-gray-300">"Menggali kebutuhan pendidikan lewat data dan feedback, untuk jadi dasar gerakan kami.”</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8 hover-scale">
+        <img src="images.png" alt="Foto fiqi" class="w-32 h-32 rounded-full shadow-md object-cover object-center mb-4 md:mb-0 md:mr-6">
+        <div>
+          <h4 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Muhammad Mahdafiqia</h4>
+          <p class="font-medium">Desainer Grafis</p>
+          <p class="italic mt-2 text-gray-500 dark:text-gray-300">“Menghidupkan konten dengan visual menarik agar pesan lebih mudah diterima.”</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8 hover-scale">
+        <img src="images.png" alt="Foto zeva" class="w-32 h-32 rounded-full shadow-md object-cover object-center mb-4 md:mb-0 md:mr-6">
+        <div>
+          <h4 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Zeva Nur Putra ghazali</h4>
+          <p class="font-medium">Koordinator Relawan</p>
+          <p class="italic mt-2 text-gray-500 dark:text-gray-300">“Menghubungkan relawan dengan aksi nyata demi memperluas akses pendidikan.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    const html = document.documentElement;
+
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

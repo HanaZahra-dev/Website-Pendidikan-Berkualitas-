@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peran Teknologi dalam Akses Pendidikan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <style>
+    .hover-scale { transition: transform 0.3s ease; }
+    .hover-scale:hover { transform: scale(1.03); }
+    .nav-item.active {
+      border-bottom: 3px solid #3b82f6;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3976/3976626.png" class="h-10 mr-3" alt="Logo Pendidikan" />
+        <h1 class="text-2xl font-bold text-blue-600 dark:text-white">Pendidikan Berkualitas</h1>
+      </div>
+      <nav class="flex items-center">
+        <ul class="flex space-x-8">
+          <li><a href="beranda.html" class="nav-item">Beranda</a></li>
+          <li><a href="tentang-kami.html" class="nav-item">Tentang Kami</a></li>
+          <li><a href="artikel.html" class="nav-item active">Artikel</a></li>
+          <li><a href="kontak.html" class="nav-item">Kontak</a></li>
+          <li><a href="komentar.php" class="nav-item">Komentar</a></li>
+        </ul>
+        <button id="dark-toggle" class="ml-4 px-3 py-1 border rounded text-sm hover:bg-gray-200 dark:hover:bg-gray-700">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Isi Artikel -->
+  <section class="py-16 px-4 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-indigo-950 dark:via-slate-900 dark:to-sky-900">
+    <div class="max-w-4xl mx-auto backdrop-blur-md bg-white/70 dark:bg-white/10 shadow-2xl border border-blue-200 dark:border-white/10 rounded-3xl px-8 py-10">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Peran Teknologi dalam Meningkatkan Akses Pendidikan</h2>
+      <img src="teknologi.jpg" alt="Ilustrasi Teknologi Pendidikan" class="rounded-lg shadow-lg mb-6 w-full max-h-[300px] object-cover">
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Pendidikan merupakan hak asasi yang mendasar bagi setiap individu, 
+        namun banyak daerah terpencil di Indonesia masih menghadapi tantangan dalam hal akses pendidikan yang memadai. 
+        Teknologi memainkan peran penting dalam meningkatkan akses pendidikan di daerah-daerah terpencil dengan cara-cara yang inovatif dan efektif. 
+        Dari pembelajaran jarak jauh hingga aplikasi belajar digital, teknologi membuka pintu bagi peluang pendidikan yang lebih merata dan inklusif.
+      </p>
+
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Salah satu manfaat utama teknologi dalam pendidikan adalah kemampuannya untuk menyediakan akses ke konten pendidikan berkualitas melalui platform online. 
+        Dengan adanya internet, siswa di daerah terpencil dapat mengakses materi pembelajaran dari berbagai sumber, menjangkau informasi yang relevan dengan lebih mudah, 
+        dan memperluas wawasan mereka tanpa terbatas oleh lokasi geografis yang terpencil.
+      </p>
+
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Selain itu, teknologi juga mendukung pembelajaran jarak jauh melalui platform digital dan aplikasi belajar. 
+        Dengan adopsi sistem pembelajaran daring, guru dapat mengajar secara efisien kepada siswa yang berada di daerah terpencil tanpa harus hadir secara fisik.
+        Ini memungkinkan interaksi edukatif yang berkelanjutan dan pembelajaran berbasis kolaborasi, 
+        menghadirkan pengalaman belajar yang lebih interaktif meskipun dalam kondisi yang terbatas.
+        </p>
+
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Pemanfaatan teknologi juga memberikan kesempatan bagi siswa dan guru di daerah terpencil untuk meningkatkan keterampilan digital mereka. 
+        Pelatihan dalam penggunaan perangkat teknologi, aplikasi pembelajaran, dan koneksi internet tidak hanya meningkatkan kompetensi teknologi mereka, 
+        tetapi juga mempersiapkan mereka untuk tuntutan dunia yang semakin terhubung dan digital.
+        </p>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        Selain meningkatkan akses, teknologi juga memungkinkan pengembangan kurikulum yang lebih relevan dengan kebutuhan lokal dan global. Aplikasi belajar dan platform pendidikan online dapat disesuaikan dengan kebutuhan daerah terpencil, meningkatkan kualitas pendidikan yang disesuaikan dengan tantangan dan potensi setempat.
+        Dengan demikian, peran teknologi dalam meningkatkan akses pendidikan di daerah terpencil akan terus menjadi kunci dalam memperluas peluang pendidikan, mengurangi kesenjangan pendidikan, dan memberikan akses yang lebih merata serta inklusif bagi semua lapisan masyarakat. 
+        Menerapkan teknologi secara bijaksana dan inovatif dapat merubah pemandangan pendidikan di daerah terpencil menuju masa depan yang lebih cerah dan berkesinambungan
+      </p>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-6">Oleh: Tim Redaksi Pendidikan Berkualitas · 24 Juni 2025
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-6">Referensi: Q-NEX Tech. (2024). Transformative Collaborative Learning for Tomorrow’s Thinkers. 
+        Diakses dari https://qnextech.com/id/blog/transformative-collaborative-learning-for-tomorrows-thinkers/</p>
+    </div>
+  </section>
+
+  <!-- Script dark mode -->
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    const html = document.documentElement;
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

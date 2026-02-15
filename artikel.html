@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artikel - Pendidikan Berkualitas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+   <script>
+    // Saat halaman pertama kali dimuat
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark'); // aktifkan mode gelap
+    }
+  </script>  
+  <style>
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+    .nav-item.active {
+      border-bottom: 3px solid #3b82f6;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3976/3976626.png" alt="Logo Pendidikan" class="h-10 mr-3">
+        <h1 class="text-2xl font-bold text-blue-600 dark:text-white">Pendidikan Berkualitas</h1>
+      </div>
+      <nav class="flex items-center">
+        <ul class="flex space-x-8">
+          <li><a href="beranda.html" class="nav-item py-2 px-1 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition">Beranda</a></li>
+          <li><a href="artikel.html" class="nav-item active py-2 px-1 text-gray-700 dark:text-white hover:text-blue-600 transition">Artikel</a></li>
+          <li><a href="tentang-kami.html" class="nav-item py-2 px-1 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition">Tentang Kami</a></li>
+          <li><a href="kontak.html" class="nav-item py-2 px-1 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition">Kontak</a></li>
+          <li><a href="komentar.php" class="nav-item py-2 px-1 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition">Komentar</a></li>
+        </ul>
+        <!-- Tombol Dark Mode -->
+        <button id="dark-toggle" class="ml-4 px-3 py-1 border rounded text-sm text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Artikel Utama -->
+  <section class="py-16 px-4 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-indigo-950 dark:via-slate-900 dark:to-sky-900 transition-all duration-500">
+    <div class="max-w-6xl mx-auto">
+      <div class="backdrop-blur-md bg-white/70 dark:bg-white/10 shadow-2xl border border-blue-200 dark:border-white/10 rounded-3xl px-8 py-10 fade-in">
+        <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-white">Wawasan Utama</h2>
+      <div class="flex flex-col lg:justify-center lg:flex-row gap-8">
+        <div class="lg:w-4/5 flex flex-col gap-4">
+          <!-- Box Artikel Kanan -->
+          <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg hover-scale flex flex-col lg:flex-row gap-4 items-center">
+  
+            <!-- VIDEO kecil -->
+            <div class="w-full lg:w-1/2 aspect-video relative cursor-pointer rounded-lg overflow-hidden shadow-md hover-scale" 
+            onclick="this.innerHTML = '<iframe class=\'w-full h-full rounded-lg\' src=\'https://www.youtube.com/embed/n5kdozro7hk?autoplay=1\' frameborder=\'0\' allowfullscreen></iframe>'">
+         <img src="https://img.youtube.com/vi/n5kdozro7hk/hqdefault.jpg"
+              alt="Thumbnail Video"
+              class="w-full h-full object-cover">
+         <img src="https://cdn-icons-png.flaticon.com/512/0/375.png"
+              alt="Play Icon"
+              class="absolute top-1/2 left-1/2 w-12 opacity-80 transform -translate-x-1/2 -translate-y-1/2">
+       </div>
+       
+            <!-- TULISAN DI SEBELAHNYA -->
+            <div class="w-full lg:w-1/2">
+              <h3 class="text-2xl font-bold mb-2 text-gray-800 dark:text-white">Pendidikan Yang Membebaskan</h3>
+              <p class="text-gray-600 dark:text-gray-300 text-sm"></p>
+              <p class="leading-relaxed">Dalam video ini, Pak Anies Baswedan membahas pemikiran Paulo Freire tentang pendidikan yang memerdekakan manusia.</p>
+               <p class="padding-relaxed">Ia menekankan bahwa belajar bukan cuma soal hafalan, tapi tentang membangun kesadaran kritis dan keberdayaan.</p> 
+              <p class= "padding-relaxed font-semibold">“Pendidikan bukan sekadar angka. Ia adalah proses membentuk manusia seutuhnya yang mampu bertanya, berpikir, dan memberi dampak.”</p>
+              <h4 class="padding-relaxed font-bold mt-6">Pernah merasa sekolah itu tidak bermakna?</h4>
+              <p class="padding-relaxed">Simak Video ini untuk bantu kamu lihat pendidikan dari sisi yang berbeda bukan sekadar belajar, tapi jadi generasi yang sadar dan berani membuat Perubahan.</p>
+            </div>
+          
+          </div>
+                <p class="font-semibold text-gray-800 dark:text-white">H. Anies Rasyid Baswedan, S.E., M.P.P., Ph.D</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">2 Mei 2025 · source on youtube</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artikel Pilihan -->
+  <section class="py-16 px-4 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-indigo-950 dark:via-slate-900 dark:to-sky-900 transition-all duration-500">
+    <div class="max-w-6xl mx-auto">
+      <div class="backdrop-blur-md bg-white/70 dark:bg-white/10 shadow-2xl border border-blue-200 dark:border-white/10 rounded-3xl px-8 py-10 fade-in">
+        <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-white">Wawasan Lainnya</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Artikel 1 -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover-scale">
+          <img src="teknologi.jpg" alt="Teknologi Pendidikan" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-blue-600 font-semibold">Teknologi</span>
+            <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800 dark:text-white">Peran Teknologi dalam Meningkatkan Akses Pendidikan</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Bagaimana platform digital dapat menghilangkan batasan geografis dan ekonomi dalam pendidikan.</p>
+            <a href="artikel1.html" class="text-blue-600 font-semibold hover:underline">Baca Selengkapnya →</a>
+          </div>
+        </div>
+
+        <!-- Artikel 2 -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover-scale">
+          <img src="pendidik_3.png" alt="Guru Profesional" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-green-600 font-semibold">Pengembangan Guru</span>
+            <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800 dark:text-white">Pentingnya Pelatihan Berkelanjutan bagi Pendidik</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Mengapa guru perlu terus mengembangkan kompetensi di era yang terus berubah dengan cepat.</p>
+          <a href="artikel2.html" class="text-blue-600 font-semibold hover:underline">Baca Selengkapnya →</a>
+          </div>
+        </div>
+
+        <!-- Artikel 3 -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover-scale">
+          <img src="kolaboratif.png" alt="Pembelajaran Kolaboratif" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-purple-600 font-semibold">Metodologi</span>
+            <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800 dark:text-white">Pembelajaran Kolaboratif untuk Masa Depan</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Teknik pembelajaran yang mempersiapkan siswa untuk dunia kerja yang semakin terhubung.</p>
+            <a href="artikel3.html" class="text-blue-600 font-semibold hover:underline">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script Dark Mode -->
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    const html = document.documentElement;
+  
+    // Saat tombol diklik
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      if (html.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+    
+</script>
+</body>
+</html>

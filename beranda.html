@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendidikan Berkualitas - Menuju Masa Depan Cerah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+    <script>
+      // Saat halaman pertama kali dimuat
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark'); // aktifkan mode gelap
+      }
+    </script>  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+    .nav-item.active {
+      border-bottom: 3px solid #3b82f6;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .fade-in {
+      animation: fadeIn 0.5s ease-in;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #b5b7b9;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3976/3976626.png" alt="Logo Pendidikan" class="h-10 mr-3">
+        <h1 class="text-2xl font-bold text-blue-600 dark:text-white">Pendidikan Berkualitas</h1>
+      </div>
+      <nav class="flex items-center space-x-4">
+        <ul class="flex space-x-8">
+          <li><a href="#" class="nav-item active py-2 px-1 text-gray-700 dark:text-white hover:text-blue-600 transition">Beranda</a></li>
+          <li><a href="artikel.html" class="nav-item py-2 px-1 text-gray-700 dark:text-white hover:text-blue-600 transition">Artikel</a></li>
+          <li><a href="tentang-kami.html" class="nav-item py-2 px-1 text-gray-700 dark:text-white hover:text-blue-600 transition">Tentang Kami</a></li>
+          <li><a href="kontak.html" class="nav-item py-2 px-1 text-gray-700 dark:text-white hover:text-blue-600 transition">Kontak</a></li>
+          <li><a href="komentar.html" class="nav-item py-2 px-1 text-gray-700 dark:text-white hover:text-blue-600 transition">Komentar</a></li>
+        </ul>
+        <!-- Tombol Dark Mode -->
+        <button id="dark-toggle" class="ml-4 px-3 py-1 border rounded text-sm text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Beranda -->
+  <section id="beranda"
+  class="relative py-32 px-6 bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-center text-center text-white"
+  style="background-image: url('sd.jpg');">
+
+  <!-- Overlay gelap biar teks-nya tetap kebaca -->
+  <div class="absolute inset-0 bg-black/60"></div>
+  <!-- Konten teks -->
+  <div class="relative z-10 max-w-3xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-wide fade-in drop-shadow-lg">
+      Selamat Datang di Pendidikan Berkualitas!
+    </h2>
+    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto fade-in drop-shadow-md">
+      Menjamin pendidikan yang inklusif dan merata serta meningkatkan kesempatan belajar untuk semua.
+    </p>
+    <a href="artikel.html"
+       class="inline-block bg-blue-600 text-white font-medium py-3 px-8 rounded-full hover:bg-blue-700 hover:scale-105 transform transition-all duration-300 dark:bg-sky-500 dark:hover:bg-sky-600 shadow-md">
+      Pelajari Lebih Lanjut
+    </a>
+  </div>
+</section>
+
+  
+
+  <!-- Script Toggle -->
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    const html = document.documentElement;
+  
+    // Ketika tombol dark mode diklik
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark'); // Tambah/hapus class "dark"
+      // Simpan pilihan ke localStorage
+      if (html.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>  
+  
+</body>
+</html>
